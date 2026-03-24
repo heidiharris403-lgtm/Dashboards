@@ -5283,6 +5283,7 @@ function hl(str, q) {
 }
 
 function escHtml(s) {
+  if (s == null) return '';
   return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
 }
 
